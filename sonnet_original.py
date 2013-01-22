@@ -12,7 +12,8 @@ logging.basicConfig(level=logging.WARNING)
 log = logging.getLogger('markov')
 
 def read_file(filename):
-	"""Reads the specified filename and emits a list of words.
+  """Reads the specified filename and emits a list of words.
+
 	This method keeps the newline at the ends of words intact 
 	and skips lines unless they have more than one word on them.
 	@param filename - the name of the file to read
@@ -135,10 +136,9 @@ if __name__ == '__main__':
 	log.info("Starting Markov")
 	#random.seed(1)
 	chain_length = 3
+	gensize = 13
 	
-	gensize = 140
-	
-	filename = 'sonnets_seed.txt'
+	filename = 'shakespeare_sonnet.txt'
 
 	# Read words from input file
 	words = read_file('shakespeare_sonnet.txt')
