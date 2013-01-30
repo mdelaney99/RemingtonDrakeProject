@@ -141,7 +141,7 @@ if __name__ == '__main__':
 	filename = 'sonnets_seed.txt'
 
 	# Read words from input file
-	words = read_file('shakespeare_sonnet.txt')
+	words = read_file('sonnets_seed.txt')
 
 	db = create_database(words, chain_length)
 
